@@ -1,7 +1,5 @@
-#First draft (to replace example.org with allocated NS domain name)
-
-@prefix rocr: <https://w3id.org/ro/crate/1.0/context#> .
-@prefix rocm: <http://example.org/ns/rocratemaker#> .
+@prefix ro: <https://w3id.org/ro/crate/1.0/context#> .
+@prefix da: <http://example.org/ns/dmbonassistant#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix dc: <http://purl.org/dc/terms/> .
 @prefix schema: <http://schema.org/> .
@@ -12,18 +10,18 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 
 
-<http://example.org/ns/rocratemaker>
+<http://example.org/ns/dmbonassistant>
     a owl:ontology;
-    rdfs:label            "rocratemaker"@en ;
-    rdfs:comment          "The RO-Crate Maker ontology"@en ;
+    rdfs:label            "dmbonassistant"@en ;
+    rdfs:comment          "The DMBON Assistant ontology"@en ;
     dc:issued        "2022-05-06"^^xsd:date ;
-    dc:modified      "2021-05-06"^^xsd:date ;
+    dc:modified      "2021-05-31"^^xsd:date ;
     dc:license       <https://creativecommons.org/licenses/by/4.0/> ;
     dc:creator
     [   
         schema:name         "VLIZ Open Science team" ;
         schema:email        <mailto:opsci@vliz.org> ;
-	schema:affiliation  <https://www.vliz.be/> ;
+	      schema:affiliation  <https://www.vliz.be/> ;
     ] ;   
     dc:contributor 
     [
@@ -44,8 +42,8 @@
         schema:email        <mailto:cedric.decruw@vliz.be> ;
         schema:affiliation  <https://www.vliz.be/> ;
     ] ;
-    vann:preferredNamespacePrefix "rocm" ;
-    vann:preferredNamespaceUri    "http://example.org/ns/rocratemaker#" .
+    vann:preferredNamespacePrefix "da" ;
+    vann:preferredNamespaceUri    "http://example.org/ns/dmbonassistant#" .
 
 
 <https://www.vliz.be/>
@@ -57,89 +55,87 @@
 
 ### classes ###
 
-rocm:SeedCrate
+da:SeedCrate
   a                     skos:Concept ;
-  rdfs:isDefinedBy      <http://example.org/ns/rocratemaker>;
+  rdfs:isDefinedBy      <http://example.org/ns/dmbonassistant>;
   rdfs:comment          "The seed RO-Crate used to start and manage other RO-Crates."@en ;
   rdfs:label            "Seed RO-Crate"@en ;
-  rdfs:subclassof	 rocr:CreativeWork . 
+  rdfs:subclassof	      ro:CreativeWork . 
 
-rocm:CrateRepo
+da:CrateRepo
   a                     skos:Concept ;
-  rdfs:isDefinedBy      <http://example.org/ns/rocratemaker>;
+  rdfs:isDefinedBy      <http://example.org/ns/dmbonassistant>;
   rdfs:comment          "The repository of the RO-Crate (in GitHub, ...)."@en ;
   rdfs:label            "RO-Crate repository"@en ;
 
-  rdfs:subclassof	 rocr:RepositoryObject . 
-#to check if this is correct... --> point to collection class, while the expected value should be a url??
+  rdfs:subclassof	      ro:RepositoryObject . 
+#to check with Cedric if this is correct... --> atm points to collection class, while the expected value should be a url??
 
-rocm:SpaceUrl
+da:SpaceUrl
   a                     skos:Concept ;
-  rdfs:isDefinedBy      <http://example.org/ns/rocratemaker>;
+  rdfs:isDefinedBy      <http://example.org/ns/dmbonassistant>;
   rdfs:comment          "The link to the Space of the RO-Crate."@en ;
   rdfs:label            "RO-Crate Space URL"@en ;
-  rdfs:subclassof	 rocr:URL . 
+  rdfs:subclassof	      ro:URL . 
   
-rocm:ShaclFile
+da:ShaclFile
   a                     skos:Concept ;
-  rdfs:isDefinedBy      <http://example.org/ns/rocratemaker>;
+  rdfs:isDefinedBy      <http://example.org/ns/dmbonassistant>;
   rdfs:comment          "The SHACL file with the contrains to which the RO-Crate data is/should be conformant."@en ;
   rdfs:label            "RO-Crate SHACL file"@en ;
-  rdfs:subclassof	 rocr:File . 
+  rdfs:subclassof	      ro:File . 
 
-rocm:SemUpliftFile
+da:SemUpliftFile
   a                     skos:Concept ;
-  rdfs:isDefinedBy      <http://example.org/ns/rocratemaker>;
+  rdfs:isDefinedBy      <http://example.org/ns/dmbonassistant>;
   rdfs:comment          "The PySUByT templates files used to semantically uplift the RO-Crate."@en ;
   rdfs:label            "RO-Crate semantic uplifting file(s)"@en ;
-  rdfs:subclassof	 rocr:File . 
+  rdfs:subclassof	      ro:File . 
 
 
 ### predicates ###
 
-rocm:hasSeedCrate
+da:hasSeedCrate
   a                     owl:ObjectProperty ;
-  rdfs:isDefinedBy      <http://example.org/ns/rocratemaker>;
+  rdfs:isDefinedBy      <http://example.org/ns/dmbonassistant>;
   rdfs:comment          "Indicates the seed RO-Crate, which is the RO-Crate used as a template to start and manage this RO-Crate."@en ;
   rdfs:label            "Has seed RO-Crate"@en ;
-  rdfs:domain           rocr:CreativeWork ;
-  rdfs:range            rocm:SeedCrate .
+  rdfs:domain           ro:CreativeWork ;
+  rdfs:range            da:SeedCrate .
 
   
-rocm:hasCrateRepo 
+da:hasCrateRepo 
   a                     owl:ObjectProperty ;
-  rdfs:isDefinedBy      <http://example.org/ns/rocratemaker>;
+  rdfs:isDefinedBy      <http://example.org/ns/dmbonassistant>;
   rdfs:comment          "Indicates the GitHub repository of the RO-Crate."@en ;
   rdfs:label            "Has RO-Crate repository"@en ;
-  rdfs:domain           rocr:CreativeWork ;
-  rdfs:range            rocm:CrateRepo .
+  rdfs:domain           ro:CreativeWork ;
+  rdfs:range            da:CrateRepo .
 
   
-rocm:hasSpace
+da:hasSpace
   a                     owl:ObjectProperty ;
-  rdfs:isDefinedBy      <http://example.org/ns/rocratemaker>;
+  rdfs:isDefinedBy      <http://example.org/ns/dmbonassistant>;
   rdfs:comment          "Indicates the DM BON assistant 'Space' of the RO-Crate."@en ;
   rdfs:label            "Has Space"@en ;
-  rdfs:domain           rocr:CreativeWork ;
-  rdfs:range            rocm:SpaceUrl .
+  rdfs:domain           ro:CreativeWork ;
+  rdfs:range            da:SpaceUrl .
 
 
-rocm:hasShaclFile
+da:hasShaclFile
   a                     owl:ObjectProperty ;
-  rdfs:isDefinedBy      <http://example.org/ns/rocratemaker>;
+  rdfs:isDefinedBy      <http://example.org/ns/dmbonassistant>;
   rdfs:comment          "Indicates the shacl constrains that are applied to the RO-Crate."@en ;
   rdfs:label            "Has Shacl constrains"@en ;
-  rdfs:domain           rocr:CreativeWork ;
-  rdfs:range            rocm:ShaclFile .
+  rdfs:domain           ro:CreativeWork ;
+  rdfs:range            da:ShaclFile .
 
 
-rocm:hasSemUpliftFile
+da:hasSemUpliftFile
   a                     owl:ObjectProperty ;
-  rdfs:isDefinedBy      <http://example.org/ns/rocratemaker>;
+  rdfs:isDefinedBy      <http://example.org/ns/dmbonassistant>;
   rdfs:comment          "Indicates the PySUByT template(s) used to semantically uplift the data within the RO-Crate."@en ;
   rdfs:label            "Has uplifting templates"@en ;
-  rdfs:domain           rocr:CreativeWork ;
-  rdfs:range            rocm:SemUpliftFile .
-
-
+  rdfs:domain           ro:CreativeWork ;
+  rdfs:range            da:SemUpliftFile .
 
