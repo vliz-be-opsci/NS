@@ -1,5 +1,5 @@
 @prefix ro: <https://w3id.org/ro/crate/1.0/context#> .
-@prefix da: <{{baseurl}}/{{self}}#> .
+@prefix da: <{{baseuri}}/{{name}}#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix dc: <http://purl.org/dc/terms/> .
 @prefix schema: <http://schema.org/> .
@@ -10,12 +10,12 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 
 
-<{{baseurl}}/{{self}}>
+<{{baseuri}}/{{name}}>
     a owl:ontology;
     rdfs:label       "dmbon-assistant-ontology"@en ;
     rdfs:comment     "The DMBON Assistant ontology"@en ;
     dc:issued        "2022-05-06"^^xsd:date ;
-    dc:modified      "2021-05-31"^^xsd:date ;
+    dc:modified      "2022-06-20"^^xsd:date ;
     dc:license       <https://creativecommons.org/licenses/by/4.0/> ;
     dc:creator
     [
@@ -43,7 +43,7 @@
         schema:affiliation  <https://www.vliz.be/> ;
     ] ;
     vann:preferredNamespacePrefix "da" ;
-    vann:preferredNamespaceUri    "{{baseurl}}/{{self}}#" .
+    vann:preferredNamespaceUri    "{{baseuri}}/{{name}}#" .
 
 
 <https://www.vliz.be/>
@@ -57,7 +57,7 @@
 
 da:SeedCrate
   a                     skos:Concept ;
-  rdfs:isDefinedBy      <{{baseurl}}/{{self}}>;
+  rdfs:isDefinedBy      <{{baseuri}}/{{name}}>;
   rdfs:comment          """A seed-RO-Crate is a kind of template/empty data-package containing structure and files to be filled in.
   The cloning of the seed-crate marks the beginning of the management of a specific data-RO-Crate."""@en ;
   rdfs:label            "Seed RO-Crate"@en ;
@@ -65,7 +65,7 @@ da:SeedCrate
 
 da:CrateRepo
   a                     skos:Concept ;
-  rdfs:isDefinedBy      <{{baseurl}}/{{self}}>;
+  rdfs:isDefinedBy      <{{baseuri}}/{{name}}>;
   rdfs:comment          "The access-string to the (public) file repository holding the version managed source data files of the RO-Crate datapackage."@en ;
   rdfs:label            "RO-Crate repository"@en ;
 
@@ -75,21 +75,21 @@ da:CrateRepo
 
 da:SpaceUrl
   a                     skos:Concept ;
-  rdfs:isDefinedBy      <{{baseurl}}/{{self}}>;
+  rdfs:isDefinedBy      <{{baseuri}}/{{name}}>;
   rdfs:comment          "The link to the Space of the RO-Crate."@en ;
   rdfs:label            "RO-Crate Space URL"@en ;
   rdfs:subclassof	      ro:URL .
 
 da:ShaclFile
   a                     skos:Concept ;
-  rdfs:isDefinedBy      <{{baseurl}}/{{self}}>;
+  rdfs:isDefinedBy      <{{baseuri}}/{{name}}>;
   rdfs:comment          "The SHACL file with the contrains to which the RO-Crate data is/should be conformant."@en ;
   rdfs:label            "RO-Crate SHACL file"@en ;
   rdfs:subclassof	      ro:File .
 
 da:SemUpliftFile
   a                     skos:Concept ;
-  rdfs:isDefinedBy      <{{baseurl}}/{{self}}>;
+  rdfs:isDefinedBy      <{{baseuri}}/{{name}}>;
   rdfs:comment          "The PySUByT templates files used to semantically uplift the RO-Crate."@en ;
   rdfs:label            "RO-Crate semantic uplifting file(s)"@en ;
   rdfs:subclassof	      ro:File .
@@ -99,7 +99,7 @@ da:SemUpliftFile
 
 da:hasSeedCrate
   a                     owl:ObjectProperty ;
-  rdfs:isDefinedBy      <{{baseurl}}/{{self}}>;
+  rdfs:isDefinedBy      <{{baseuri}}/{{name}}>;
   rdfs:comment          "Indicates the seed RO-Crate, which is the RO-Crate used as a template to start and manage datapackages conforming to this RO-Profile-Crate."@en ;
   rdfs:label            "Has seed RO-Crate"@en ;
   rdfs:domain           ro:CreativeWork ;
@@ -108,7 +108,7 @@ da:hasSeedCrate
 
 da:hasCrateRepo
   a                     owl:ObjectProperty ;
-  rdfs:isDefinedBy      <{{baseurl}}/{{self}}>;
+  rdfs:isDefinedBy      <{{baseuri}}/{{name}}>;
   rdfs:comment          "Indicates the GitHub repository of the RO-Crate."@en ;
   rdfs:label            "Has RO-Crate repository"@en ;
   rdfs:domain           ro:CreativeWork ;
@@ -117,7 +117,7 @@ da:hasCrateRepo
 
 da:hasSpace
   a                     owl:ObjectProperty ;
-  rdfs:isDefinedBy      <{{baseurl}}/{{self}}>;
+  rdfs:isDefinedBy      <{{baseuri}}/{{name}}>;
   rdfs:comment          "Indicates the DM BON assistant 'Space' of the RO-Crate."@en ;
   rdfs:label            "Has Space"@en ;
   rdfs:domain           ro:CreativeWork ;
@@ -126,7 +126,7 @@ da:hasSpace
 
 da:hasShaclFile
   a                     owl:ObjectProperty ;
-  rdfs:isDefinedBy      <{{baseurl}}/{{self}}>;
+  rdfs:isDefinedBy      <{{baseuri}}/{{name}}>;
   rdfs:comment          "Indicates the shacl constrains that are applied to the RO-Crate."@en ;
   rdfs:label            "Has Shacl constrains"@en ;
   rdfs:domain           ro:CreativeWork ;
@@ -135,7 +135,7 @@ da:hasShaclFile
 
 da:hasSemUpliftFile
   a                     owl:ObjectProperty ;
-  rdfs:isDefinedBy      <{{baseurl}}/{{self}}>;
+  rdfs:isDefinedBy      <{{baseuri}}/{{name}}>;
   rdfs:comment          "Indicates the PySUByT template(s) used to semantically uplift the data within the RO-Crate."@en ;
   rdfs:label            "Has uplifting templates"@en ;
   rdfs:domain           ro:CreativeWork ;
