@@ -23,7 +23,7 @@ jobs:
       - name: Build Pages
         uses: vliz-be-opsci/pylode-to-pages@v0
         with:
-          baseurl: http://todo.domain.com/NS/
+          baseuri: http://todo.domain.com/NS/
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
