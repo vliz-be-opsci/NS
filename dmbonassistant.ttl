@@ -16,7 +16,7 @@
     rdfs:label       "dmbon-assistant-ontology"@en ;
     rdfs:comment     "The DMBON Assistant ontology"@en ;
     dc:issued        "2022-05-06"^^xsd:date ;
-    dc:modified      "2022-06-20"^^xsd:date ;
+    dc:modified      "2022-06-22"^^xsd:date ;
     dc:license       <https://creativecommons.org/licenses/by/4.0/> ;
     dc:creator
     [
