@@ -15,15 +15,10 @@ jobs:
           submodules: true  # Fetch Hugo themes (true OR recursive)
           fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
 
-      - name: Setup Python
-        uses: actions/setup-python@v3
-        with:
-          python-version: '3.x'
-
       - name: Build Pages
         uses: vliz-be-opsci/pylode-to-pages@v0
         with:
-          baseuri: http://todo.domain.com/NS/
+          baseuri: http://todo.domain.com/NS
           outfolder: ./publish
 
       - name: Show contents
