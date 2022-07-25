@@ -26,7 +26,7 @@ jobs:
           baseuri: http://todo.domain.com/NS/
 
       - name: Show contents
-        run : find . -type f
+        run : pwd && find . -type f && echo "--" && find /github/workspace -type f
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
