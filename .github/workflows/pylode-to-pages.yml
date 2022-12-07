@@ -18,7 +18,7 @@ jobs:
       - name: Build Pages
         uses: vliz-be-opsci/pylode-to-pages@v0
         with:
-          baseuri: http://todo.domain.com/NS
+          baseuri: https://open-vocabularies.vliz.be
           outfolder: ./publish
 
       - name: Show contents
