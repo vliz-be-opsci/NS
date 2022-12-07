@@ -15,18 +15,18 @@
     ],
     "https://schema.org/contributor": [
       {
-        "@id": "_:nac333fa31373401689011ef924ca411cb2"
+        "@id": "_:n139db4e3d6fa4e34ab91ecb44b9da8fcb2"
       },
       {
-        "@id": "_:nac333fa31373401689011ef924ca411cb3"
+        "@id": "_:n139db4e3d6fa4e34ab91ecb44b9da8fcb3"
       },
       {
-        "@id": "_:nac333fa31373401689011ef924ca411cb4"
+        "@id": "_:n139db4e3d6fa4e34ab91ecb44b9da8fcb4"
       }
     ],
     "https://schema.org/creator": [
       {
-        "@id": "_:nac333fa31373401689011ef924ca411cb1"
+        "@id": "_:n139db4e3d6fa4e34ab91ecb44b9da8fcb1"
       }
     ],
     "https://schema.org/dateIssued": [
@@ -60,16 +60,16 @@
     ]
   },
   {
-    "@id": "_:nac333fa31373401689011ef924ca411cb1"
+    "@id": "_:n139db4e3d6fa4e34ab91ecb44b9da8fcb1"
   },
   {
-    "@id": "_:nac333fa31373401689011ef924ca411cb2"
+    "@id": "_:n139db4e3d6fa4e34ab91ecb44b9da8fcb2"
   },
   {
-    "@id": "_:nac333fa31373401689011ef924ca411cb3"
+    "@id": "_:n139db4e3d6fa4e34ab91ecb44b9da8fcb3"
   },
   {
-    "@id": "_:nac333fa31373401689011ef924ca411cb4"
+    "@id": "_:n139db4e3d6fa4e34ab91ecb44b9da8fcb4"
   }
 ]
 	</script>
@@ -151,7 +151,7 @@
               <a class="hover_property" href="http://purl.org/vocab/vann/preferredNamespaceUri" title="None. Defined in None">Preferred Namespace Uri</a>
             </dt>
             <dd>
-              <a href="https://open-vocabularies.vliz.be/emobon-governance#">da:</a>
+              <a href="https://open-vocabularies.vliz.be/emobon-governance#">gov:</a>
             </dd>
           </div>
           <div>
@@ -162,9 +162,140 @@
           </div>
         </dl>
       </div>
+      <div class="section" id="classes">
+        <h2>Classes</h2>
+        <div class="property entity" id="Systemoperatingprocedure">
+          <h3>System operating procedure
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>https://open-vocabularies.vliz.be/emobon-governance#Sop</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">Is Defined By</a>
+              </th>
+              <td>
+                <a href="https://open-vocabularies.vliz.be/emobon-governance">ns1:emobon-governance</a>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+              </th>
+              <td><p>a set of written instructions that describes the step-by-step process that must be taken to properly perform a routine activity.</p></td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="Materialsample">
+          <h3>Material sample
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>https://open-vocabularies.vliz.be/emobon-governance#MaterialSample</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">Is Defined By</a>
+              </th>
+              <td>
+                <a href="https://open-vocabularies.vliz.be/emobon-governance">ns1:emobon-governance</a>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+              </th>
+              <td><p>a small quantity of a material or product that represents the whole.</p></td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://w3id.org/profile/ontdoc/inRangeOf" title="Inverse of rdfs:range. Defined in Ontology Documentation Profile">In Range Of</a>
+              </th>
+              <td>
+                <ul>
+                  <li>
+                    <span>
+                      <a href="#sampleType">gov:sampleType</a>
+                      <sup class="sup-op" title="OWL Object Property">op</sup>
+                    </span>
+                  </li>
+                  <li>
+                    <a href="#sop">gov:sop</a>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="#hardSedementType">gov:hardSedementType</a>
+                      <sup class="sup-op" title="OWL Object Property">op</sup>
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="#softSedementType">gov:softSedementType</a>
+                      <sup class="sup-op" title="OWL Object Property">op</sup>
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="#waterType">gov:waterType</a>
+                      <sup class="sup-op" title="OWL Object Property">op</sup>
+                    </span>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="MaterialReplicat">
+          <h3>Material sample
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>https://open-vocabularies.vliz.be/emobon-governance#MaterialReplicat</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">Is Defined By</a>
+              </th>
+              <td>
+                <a href="https://open-vocabularies.vliz.be/emobon-governance">ns1:emobon-governance</a>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+              </th>
+              <td><p>an exact copy or model of something, especially one on a smaller scale. In this case a material sample</p></td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://w3id.org/profile/ontdoc/inRangeOf" title="Inverse of rdfs:range. Defined in Ontology Documentation Profile">In Range Of</a>
+              </th>
+              <td>
+                <span>
+                  <a href="#sampleSize">gov:sampleSize</a>
+                  <sup class="sup-op" title="OWL Object Property">op</sup>
+                </span>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
       <div class="section" id="objectproperties">
         <h2>Object Properties</h2>
-        <div class="property entity" id="Samplesize">
+        <div class="property entity" id="sampleSize">
           <h3>Sample size
             <sup class="sup-op" title="OWL Object Property">op</sup>
           </h3>
@@ -202,12 +333,15 @@
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
               </th>
               <td>
-                <a href="#MaterialReplicat">da:MaterialReplicat</a>
+                <span>
+                  <a href="#MaterialReplicat">gov:MaterialReplicat</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
               </td>
             </tr>
           </table>
         </div>
-        <div class="property entity" id="Sampletype">
+        <div class="property entity" id="sampleType">
           <h3>Sample type
             <sup class="sup-op" title="OWL Object Property">op</sup>
           </h3>
@@ -245,12 +379,15 @@
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
               </th>
               <td>
-                <a href="#MaterialSample">da:MaterialSample</a>
+                <span>
+                  <a href="#Materialsample">gov:MaterialSample</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
               </td>
             </tr>
           </table>
         </div>
-        <div class="property entity" id="Hardsedimenttype">
+        <div class="property entity" id="hardSedementType">
           <h3>Hard sediment type
             <sup class="sup-op" title="OWL Object Property">op</sup>
           </h3>
@@ -288,12 +425,15 @@
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
               </th>
               <td>
-                <a href="#MaterialSample">da:MaterialSample</a>
+                <span>
+                  <a href="#Materialsample">gov:MaterialSample</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
               </td>
             </tr>
           </table>
         </div>
-        <div class="property entity" id="SOftsedimenttype">
+        <div class="property entity" id="softSedementType">
           <h3>SOft sediment type
             <sup class="sup-op" title="OWL Object Property">op</sup>
           </h3>
@@ -331,12 +471,15 @@
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
               </th>
               <td>
-                <a href="#MaterialSample">da:MaterialSample</a>
+                <span>
+                  <a href="#Materialsample">gov:MaterialSample</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
               </td>
             </tr>
           </table>
         </div>
-        <div class="property entity" id="watersampletype">
+        <div class="property entity" id="waterType">
           <h3>water sample type
             <sup class="sup-op" title="OWL Object Property">op</sup>
           </h3>
@@ -374,7 +517,10 @@
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
               </th>
               <td>
-                <a href="#MaterialSample">da:MaterialSample</a>
+                <span>
+                  <a href="#Materialsample">gov:MaterialSample</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
               </td>
             </tr>
           </table>
@@ -469,13 +615,13 @@
       <div id="namespaces">
         <h2>Namespaces</h2>
         <dl>
-          <dt id="da">da</dt>
-          <dd>
-            <code>https://open-vocabularies.vliz.be/emobon-governance#</code>
-          </dd>
           <dt id="dc">dc</dt>
           <dd>
             <code>http://purl.org/dc/terms/</code>
+          </dd>
+          <dt id="gov">gov</dt>
+          <dd>
+            <code>https://open-vocabularies.vliz.be/emobon-governance#</code>
           </dd>
           <dt id="ns1">ns1</dt>
           <dd>
@@ -516,6 +662,12 @@
         <table class="entity">
           <tr>
             <td>
+              <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+            </td>
+            <td>Classes</td>
+          </tr>
+          <tr>
+            <td>
               <sup class="sup-op" title="OWL Object Property">op</sup>
             </td>
             <td>Object Properties</td>
@@ -543,23 +695,39 @@
         </li>
         <li>
           <h4>
+            <a href="#classes">Classes</a>
+          </h4>
+          <ul class="second">
+            <li>
+              <a href="#Systemoperatingprocedure">System operating procedure</a>
+            </li>
+            <li>
+              <a href="#Materialsample">Material sample</a>
+            </li>
+            <li>
+              <a href="#MaterialReplicat">Material sample</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <h4>
             <a href="#objectproperties">Object Properties</a>
           </h4>
           <ul class="second">
             <li>
-              <a href="#Samplesize">Sample size</a>
+              <a href="#sampleSize">Sample size</a>
             </li>
             <li>
-              <a href="#Sampletype">Sample type</a>
+              <a href="#sampleType">Sample type</a>
             </li>
             <li>
-              <a href="#Hardsedimenttype">Hard sediment type</a>
+              <a href="#hardSedementType">Hard sediment type</a>
             </li>
             <li>
-              <a href="#SOftsedimenttype">SOft sediment type</a>
+              <a href="#softSedementType">SOft sediment type</a>
             </li>
             <li>
-              <a href="#watersampletype">water sample type</a>
+              <a href="#waterType">water sample type</a>
             </li>
             <li>
               <a href="#Measurementtype">Measurement type</a>
@@ -575,10 +743,10 @@
           </h4>
           <ul class="second">
             <li>
-              <a href="#da">da</a>
+              <a href="#dc">dc</a>
             </li>
             <li>
-              <a href="#dc">dc</a>
+              <a href="#gov">gov</a>
             </li>
             <li>
               <a href="#ns1">ns1</a>

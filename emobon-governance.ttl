@@ -1,5 +1,5 @@
 @prefix ro: <https://w3id.org/ro/crate/1.0/context#> .
-@prefix da: <https://open-vocabularies.vliz.be/emobon-governance#> .
+@prefix gov: <https://open-vocabularies.vliz.be/emobon-governance#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix dc: <http://purl.org/dc/terms/> .
 @prefix schema: <http://schema.org/> .
@@ -56,22 +56,22 @@
 
 ### classes ###
 
-da:Sop
-  a                     skos:Concept ;
+gov:Sop
+  a                     owl:Class ;
   rdfs:isDefinedBy      <https://open-vocabularies.vliz.be/emobon-governance>;
   rdfs:comment          """a set of written instructions that describes the step-by-step process that must be taken to properly perform a routine activity."""@en ;
   rdfs:label            "System operating procedure"@en ;
   rdfs:subclassof	      ro:CreativeWork .
 
-da:MaterialSample       
-  a                     skos:Concept ;
+gov:MaterialSample       
+  a                     owl:Class ;
   rdfs:isDefinedBy      <https://open-vocabularies.vliz.be/emobon-governance>;
   rdfs:comment          """a small quantity of a material or product that represents the whole."""@en ;
   rdfs:label            "Material sample"@en ;
   rdfs:subclassof	      schema:Thing .
 
-da:MaterialReplicat
-  a                     skos:Concept ;
+gov:MaterialReplicat
+  a                     owl:Class ;
   rdfs:isDefinedBy      <https://open-vocabularies.vliz.be/emobon-governance>;
   rdfs:comment          """an exact copy or model of something, especially one on a smaller scale. In this case a material sample"""@en ;
   rdfs:label            "Material sample"@en ;
@@ -79,55 +79,55 @@ da:MaterialReplicat
 
 ### predicates ###
 
-da:sampleSize
+gov:sampleSize
   a                     owl:ObjectProperty ;
   rdfs:isDefinedBy      <https://open-vocabularies.vliz.be/emobon-governance>;
   rdfs:comment          "Indicates the size of a material replicat"@en ;
   rdfs:label            "Sample size"@en ;
   rdfs:domain           schema:Thing ;
-  rdfs:range            da:MaterialReplicat .
+  rdfs:range            gov:MaterialReplicat .
 
-da:sampleType
+gov:sampleType
   a                     owl:ObjectProperty ;
   rdfs:isDefinedBy      <https://open-vocabularies.vliz.be/emobon-governance>;
   rdfs:comment          "Indicates the type of a material sample"@en ;
   rdfs:label            "Sample type"@en ;
   rdfs:domain           schema:Thing ;
-  rdfs:range            da:MaterialSample .
+  rdfs:range            gov:MaterialSample .
 
-da:sop
+gov:sop
   a                     skos:ObjectProperty ;
   rdfs:isDefinedBy      <https://open-vocabularies.vliz.be/emobon-governance>;
   rdfs:comment          """a set of written instructions that describes the step-by-step process that must be taken to properly perform a routine activity."""@en ;
   rdfs:label            "System operating procedure"@en ;
   rdfs:domain           schema:Thing ;
-  rdfs:range            da:MaterialSample .
+  rdfs:range            gov:MaterialSample .
 
-da:hardSedementType
+gov:hardSedementType
   a                     owl:ObjectProperty ;
   rdfs:isDefinedBy      <https://open-vocabularies.vliz.be/emobon-governance>;
   rdfs:comment          "a naturally occurring material that is broken down by processes of weathering and erosion that is of a hard type"@en ;
   rdfs:label            "Hard sediment type"@en ;
   rdfs:domain           schema:Thing ;
-  rdfs:range            da:MaterialSample .
+  rdfs:range            gov:MaterialSample .
 
-da:softSedementType
+gov:softSedementType
   a                     owl:ObjectProperty ;
   rdfs:isDefinedBy      <https://open-vocabularies.vliz.be/emobon-governance>;
   rdfs:comment          "a naturally occurring material that is broken down by processes of weathering and erosion that is of a soft type"@en ;
   rdfs:label            "SOft sediment type"@en ;
   rdfs:domain           schema:Thing ;
-  rdfs:range            da:MaterialSample .
+  rdfs:range            gov:MaterialSample .
 
-da:waterType
+gov:waterType
   a                     owl:ObjectProperty ;
   rdfs:isDefinedBy      <https://open-vocabularies.vliz.be/emobon-governance>;
   rdfs:comment          "water sample"@en ;
   rdfs:label            "water sample type"@en ;
   rdfs:domain           schema:Thing ;
-  rdfs:range            da:MaterialSample .
+  rdfs:range            gov:MaterialSample .
 
-da:measurementType
+gov:measurementType
   a                     owl:ObjectProperty ;
   rdfs:isDefinedBy      <https://open-vocabularies.vliz.be/emobon-governance>;
   rdfs:comment          "type of measurement"@en ;
@@ -135,7 +135,7 @@ da:measurementType
   rdfs:domain           schema:Thing ;
   rdfs:range            schema:Event .
 
-da:temperatureType
+gov:temperatureType
   a                     owl:ObjectProperty ;
   rdfs:isDefinedBy      <https://open-vocabularies.vliz.be/emobon-governance>;
   rdfs:comment          "type of temperature measurement"@en ;
