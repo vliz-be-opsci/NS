@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>dmbon-assistant-ontology</title>
+    <title>EMO BON Event Ontology</title>
     <link href="pylode.css" rel="stylesheet" type="text/css">
     <link href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABhklEQVQ4jbWPzStEURjG3yQLirlGKUnKFO45Z+SjmXvnnmthQcpCoVhYmD/AwmJiI3OvZuZc2U3UlKU0/gAslMw9JgvhHxAr2fko7r0jHSsl+TgbTz2Lt5731/MASEiJW9ONml2QyX6rsGalmnT74v8BDf12hxJfpV8d1uwNKUBYszabdFv84L8B9X0rESVmmUup2fme0cVhJWaZHw4NWL1SewEAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ9Hn31OgoATL+CkLDGB5H1OKj4nFd/FBxUXJ0UZNb4edw/6nLyJXaj5FeCVyPLNIVmYK8TG1IwWb16L1gEACAFV90ftoT8bdOX0EeyY99gxBXZMgRz6qGb1KantAACI0UvE6F5XJqEjpsdURouI0Vt5gGOUkUNnPu7ObGIIMfNaGqDmjDRi9FZldF1lRgYzeqUyeoiY4ag5Iy3RgOYRM8+/M2bG8efsO4hGrpmJseyMAAAAAElFTkSuQmCC" rel="icon" sizes="16x16" type="image/png">
     <link href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAC40lEQVRYhe2UT0hUQRzHp6Iss1B3VZKIDbbdfW9mnoi4f3zzjkJQeOgS0SEIb1EWBGGlLLu460zQPQM1unUIIjA6rfpm6ZAhHjoIRVQUFUlEbG+euTsdXG1d3VL3bVD4g+9h+L35fT/8fvN7ADgY9aHY5fpIvK82HO9ysu66wxWOzbkjcekKx0a2ALYA/n2AGi3a6ArFezcidziecQygNhhrcUficjP6PwBqtGijKxy/thnVBePHywYoDsFhl53GV8SEcsTx4usCMLUewTVpc23BNvEzm6Neyf1+KcG2vwqwUjgrOJq2JmHftwmkVBRGTvncFodnbI7vChO/FRznCmHsNM7aHM9Yk7Df5iqsLMw9sMNOK2g+jS4IEz0UJv4iuJZb2RltWnB4UZqH6ioGAgAAGe5vtiZhtzDx7OoRadLmeM7m6IRjhnLMW2Vx1bA5GhAmnhIcz6/xNj4Ujsky8UspwfayjDPjsF2Y6L7N8Vzx/BfP+KPg6LbgSqd8DnfJW2CnbaLhfH5ephpqygJYvQU4Z3P82TLRsDDhUTnmrSq+Y3N0Mg+Xldy/zwEAnLMWZ3pHpNExmfLs/t0dOdVcbT0JeKxUwFP2VljjqiE47Jp53LTXNxhsUZjerTByXWX6VZWRs/4bIQ2ACv+UAomgDzLCISNZxAxZKMhIDjLy1JfsaK+I+eGBUBNk5E2x8RogX/PdcDZUqieWTSh5D6nOVKqfhoycUmlHFFIyu5RXqf7AcQDISCpv/tqbMBqK883RtmpISRoxQyJKPgGn3wNk5NEigDFa6hslqV/Kj+FdBQD0bshIDlKSLlVcoWQo36UhR80BAMB73lulMn0EMpJTqD6qJiOt3mho/8GbkT2BZNgDB/V+RI0fkOrT3kRIVQbaDizJm2hdNbINBxwk5xAj3yEjuV9rZ1iIkgxixkLBA83mz8uCjLwoGwAx0vOnFSy5mtR4VTaAQvVORMnwZgSpzkrV/QmdE2tKe46+MQAAAABJRU5ErkJggg==" rel="icon" sizes="32x32" type="image/png">
@@ -9,42 +9,50 @@
     <script id="schema.org" type="application/ld+json">
 [
   {
-    "@id": "https://open-vocabularies.vliz.be/dmbonassistant",
+    "@id": "https://open-vocabularies.vliz.be/EMOBON-event",
     "@type": [
       "https://schema.org/DefinedTermSet"
     ],
     "https://schema.org/contributor": [
       {
-        "@id": "_:n4c76c3d6648c436580c8b9c12ced839fb2"
+        "@id": "_:n78175318b06c4f6dbdcfb04fbf5f38c5b2"
       },
       {
-        "@id": "_:n4c76c3d6648c436580c8b9c12ced839fb3"
+        "@id": "_:n78175318b06c4f6dbdcfb04fbf5f38c5b3"
       },
       {
-        "@id": "_:n4c76c3d6648c436580c8b9c12ced839fb4"
+        "@id": "_:n78175318b06c4f6dbdcfb04fbf5f38c5b4"
+      },
+      {
+        "@id": "_:n78175318b06c4f6dbdcfb04fbf5f38c5b5"
+      }
+    ],
+    "https://schema.org/copyrightNotice": [
+      {
+        "@value": "Copyright 2017 W3C/OGC."
       }
     ],
     "https://schema.org/creator": [
       {
-        "@id": "_:n4c76c3d6648c436580c8b9c12ced839fb1"
+        "@id": "_:n78175318b06c4f6dbdcfb04fbf5f38c5b1"
       }
     ],
-    "https://schema.org/dateIssued": [
+    "https://schema.org/dateCreated": [
       {
         "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2022-05-06"
+        "@value": "2017-04-17"
       }
     ],
     "https://schema.org/dateModified": [
       {
         "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2022-06-22"
+        "@value": "2022-12-07"
       }
     ],
     "https://schema.org/description": [
       {
         "@language": "en",
-        "@value": "The DMBON Assistant ontology"
+        "@value": "EMO-BON ontology for describing sampling events, samples, and environmental measurements."
       }
     ],
     "https://schema.org/license": [
@@ -55,21 +63,24 @@
     "https://schema.org/name": [
       {
         "@language": "en",
-        "@value": "dmbon-assistant-ontology"
+        "@value": "EMO BON Event Ontology"
       }
     ]
   },
   {
-    "@id": "_:n4c76c3d6648c436580c8b9c12ced839fb1"
+    "@id": "_:n78175318b06c4f6dbdcfb04fbf5f38c5b1"
   },
   {
-    "@id": "_:n4c76c3d6648c436580c8b9c12ced839fb2"
+    "@id": "_:n78175318b06c4f6dbdcfb04fbf5f38c5b2"
   },
   {
-    "@id": "_:n4c76c3d6648c436580c8b9c12ced839fb3"
+    "@id": "_:n78175318b06c4f6dbdcfb04fbf5f38c5b3"
   },
   {
-    "@id": "_:n4c76c3d6648c436580c8b9c12ced839fb4"
+    "@id": "_:n78175318b06c4f6dbdcfb04fbf5f38c5b4"
+  },
+  {
+    "@id": "_:n78175318b06c4f6dbdcfb04fbf5f38c5b5"
   }
 ]
 	</script>
@@ -77,7 +88,7 @@
   <body>
     <div id="content">
       <div class="section" id="metadata">
-        <h1>dmbon-assistant-ontology</h1>
+        <h1>EMO BON Event Ontology</h1>
         <h2>Metadata</h2>
         <dl>
           <div>
@@ -85,14 +96,14 @@
               <strong>IRI</strong>
             </dt>
             <dd>
-              <code>https://open-vocabularies.vliz.be/dmbonassistant</code>
+              <code>https://open-vocabularies.vliz.be/EMOBON-event</code>
             </dd>
           </div>
           <div>
             <dt>
               <a class="hover_property" href="http://purl.org/dc/terms/title" title="A name given to the resource. Defined in DCMI Metadata Terms">Title</a>
             </dt>
-            <dd><p>dmbon-assistant-ontology</p></dd>
+            <dd><p>EMO BON Event Ontology</p></dd>
           </div>
           <div>
             <dt>
@@ -117,20 +128,23 @@
                 <li>
                   <span></span>
                 </li>
+                <li>
+                  <span></span>
+                </li>
               </ul>
             </dd>
           </div>
           <div>
             <dt>
-              <a class="hover_property" href="http://purl.org/dc/terms/modified" title="Date on which the resource was changed. Defined in DCMI Metadata Terms">Date Modified</a>
+              <a class="hover_property" href="http://purl.org/dc/terms/created" title="Date of creation of the resource. Defined in DCMI Metadata Terms">Date Created</a>
             </dt>
-            <dd><p>2022-06-22</p></dd>
+            <dd><p>2017-04-17</p></dd>
           </div>
           <div>
             <dt>
-              <a class="hover_property" href="http://purl.org/dc/terms/issued" title="Date of formal issuance of the resource. Defined in DCMI Metadata Terms">Date Issued</a>
+              <a class="hover_property" href="http://purl.org/dc/terms/modified" title="Date on which the resource was changed. Defined in DCMI Metadata Terms">Date Modified</a>
             </dt>
-            <dd><p>2022-05-06</p></dd>
+            <dd><p>2022-12-07</p></dd>
           </div>
           <div>
             <dt>
@@ -142,37 +156,245 @@
           </div>
           <div>
             <dt>
+              <a class="hover_property" href="http://purl.org/dc/terms/rights" title="Information about rights held in and over the resource. Defined in DCMI Metadata Terms">Rights</a>
+            </dt>
+            <dd><p>Copyright 2017 W3C/OGC.</p></dd>
+          </div>
+          <div>
+            <dt>
               <a class="hover_property" href="http://purl.org/vocab/vann/preferredNamespacePrefix" title="None. Defined in None">Preferred Namespace Prefix</a>
             </dt>
-            <dd><p>da</p></dd>
+            <dd><p>DMBONassist</p></dd>
           </div>
           <div>
             <dt>
               <a class="hover_property" href="http://purl.org/vocab/vann/preferredNamespaceUri" title="None. Defined in None">Preferred Namespace Uri</a>
             </dt>
             <dd>
-              <a href="https://open-vocabularies.vliz.be/dmbonassistant#">da:</a>
+              <a href="https://open-vocabularies.vliz.be/EMOBON-event#">emobon:</a>
             </dd>
           </div>
           <div>
             <dt>
               <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
             </dt>
-            <dd><p>The DMBON Assistant ontology</p></dd>
+            <dd><p>EMO-BON ontology for describing sampling events, samples, and environmental measurements.</p></dd>
           </div>
         </dl>
       </div>
+      <div class="section" id="classes">
+        <h2>Classes</h2>
+        <div class="property entity" id="Event">
+          <h3>Event
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>https://open-vocabularies.vliz.be/EMOBON-event#Event</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">Is Defined By</a>
+              </th>
+              <td>
+                <a href="https://open-vocabularies.vliz.be/EMOBON-event">ns1:EMOBON-event</a>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://w3id.org/profile/ontdoc/inRangeOf" title="Inverse of rdfs:range. Defined in Ontology Documentation Profile">In Range Of</a>
+              </th>
+              <td>
+                <a href="#tidalStage">emobon:tidalStage</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="Materialsample">
+          <h3>Material sample
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>https://open-vocabularies.vliz.be/EMOBON-event#MaterialSample</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">Is Defined By</a>
+              </th>
+              <td>
+                <a href="https://open-vocabularies.vliz.be/EMOBON-event">ns1:EMOBON-event</a>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://w3id.org/profile/ontdoc/inDomainOf" title="Inverse of rdfs:domain. Defined in Ontology Documentation Profile">In Domain Of</a>
+              </th>
+              <td>
+                <a href="#sop">emobon:sop</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="Materialreplicate">
+          <h3>Material replicate
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>https://open-vocabularies.vliz.be/EMOBON-event#MaterialReplicate</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">Is Defined By</a>
+              </th>
+              <td>
+                <a href="https://open-vocabularies.vliz.be/EMOBON-event">ns1:EMOBON-event</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="Environmentalmeasurement">
+          <h3>Environmental measurement
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>https://open-vocabularies.vliz.be/EMOBON-event#EnvironmentalMeasurement</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">Is Defined By</a>
+              </th>
+              <td>
+                <a href="https://open-vocabularies.vliz.be/EMOBON-event">ns1:EMOBON-event</a>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://w3id.org/profile/ontdoc/inDomainOf" title="Inverse of rdfs:domain. Defined in Ontology Documentation Profile">In Domain Of</a>
+              </th>
+              <td>
+                <ul>
+                  <li>
+                    <a href="#sop">emobon:sop</a>
+                  </li>
+                  <li>
+                    <a href="#measurementType">emobon:measurementType</a>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="WaterSample">
+          <h3>Environmental measurement
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>https://open-vocabularies.vliz.be/EMOBON-event#WaterSample</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">Is Defined By</a>
+              </th>
+              <td>
+                <a href="https://open-vocabularies.vliz.be/EMOBON-event">ns1:EMOBON-event</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="SedimentSample">
+          <h3>Environmental measurement
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>https://open-vocabularies.vliz.be/EMOBON-event#SedimentSample</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">Is Defined By</a>
+              </th>
+              <td>
+                <a href="https://open-vocabularies.vliz.be/EMOBON-event">ns1:EMOBON-event</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="Environmentalmeasurementdevice">
+          <h3>Environmental measurement device
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>https://open-vocabularies.vliz.be/EMOBON-event#MeasurementDevice</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">Is Defined By</a>
+              </th>
+              <td>
+                <a href="https://open-vocabularies.vliz.be/EMOBON-event">ns1:EMOBON-event</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="Samplingdevice">
+          <h3>Sampling device
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>https://open-vocabularies.vliz.be/EMOBON-event#SamplingDevice</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">Is Defined By</a>
+              </th>
+              <td>
+                <a href="https://open-vocabularies.vliz.be/EMOBON-event">ns1:EMOBON-event</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
       <div class="section" id="objectproperties">
         <h2>Object Properties</h2>
-        <div class="property entity" id="HasseedRO-Crate">
-          <h3>Has seed RO-Crate
+        <div class="property entity" id="Samplesize">
+          <h3>Sample size
             <sup class="sup-op" title="OWL Object Property">op</sup>
           </h3>
           <table>
             <tr>
               <th>IRI</th>
               <td>
-                <code>https://open-vocabularies.vliz.be/dmbonassistant#hasSeedCrate</code>
+                <code>https://open-vocabularies.vliz.be/EMOBON-event#sampleSize</code>
               </td>
             </tr>
             <tr>
@@ -180,202 +402,14 @@
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">Is Defined By</a>
               </th>
               <td>
-                <a href="https://open-vocabularies.vliz.be/dmbonassistant">ns1:dmbonassistant</a>
+                <a href="https://open-vocabularies.vliz.be/EMOBON-event">ns1:EMOBON-event</a>
               </td>
             </tr>
             <tr>
               <th>
                 <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
               </th>
-              <td><p>Indicates the seed RO-Crate, which is the RO-Crate used as a template to start and manage datapackages conforming to this RO-Profile-Crate.</p></td>
-            </tr>
-            <tr>
-              <th>
-                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
-              </th>
-              <td>
-                <a href="https://w3id.org/ro/crate/1.0/context#CreativeWork">ro:CreativeWork</a>
-              </td>
-            </tr>
-            <tr>
-              <th>
-                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
-              </th>
-              <td>
-                <a href="#SeedCrate">da:SeedCrate</a>
-              </td>
-            </tr>
-          </table>
-        </div>
-        <div class="property entity" id="HasRO-Craterepository">
-          <h3>Has RO-Crate repository
-            <sup class="sup-op" title="OWL Object Property">op</sup>
-          </h3>
-          <table>
-            <tr>
-              <th>IRI</th>
-              <td>
-                <code>https://open-vocabularies.vliz.be/dmbonassistant#hasCrateRepo</code>
-              </td>
-            </tr>
-            <tr>
-              <th>
-                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">Is Defined By</a>
-              </th>
-              <td>
-                <a href="https://open-vocabularies.vliz.be/dmbonassistant">ns1:dmbonassistant</a>
-              </td>
-            </tr>
-            <tr>
-              <th>
-                <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
-              </th>
-              <td><p>Indicates the GitHub repository of the RO-Crate.</p></td>
-            </tr>
-            <tr>
-              <th>
-                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
-              </th>
-              <td>
-                <a href="https://w3id.org/ro/crate/1.0/context#CreativeWork">ro:CreativeWork</a>
-              </td>
-            </tr>
-            <tr>
-              <th>
-                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
-              </th>
-              <td>
-                <a href="#CrateRepo">da:CrateRepo</a>
-              </td>
-            </tr>
-          </table>
-        </div>
-        <div class="property entity" id="HasSpace">
-          <h3>Has Space
-            <sup class="sup-op" title="OWL Object Property">op</sup>
-          </h3>
-          <table>
-            <tr>
-              <th>IRI</th>
-              <td>
-                <code>https://open-vocabularies.vliz.be/dmbonassistant#hasSpace</code>
-              </td>
-            </tr>
-            <tr>
-              <th>
-                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">Is Defined By</a>
-              </th>
-              <td>
-                <a href="https://open-vocabularies.vliz.be/dmbonassistant">ns1:dmbonassistant</a>
-              </td>
-            </tr>
-            <tr>
-              <th>
-                <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
-              </th>
-              <td><p>Indicates the DM BON assistant 'Space' of the RO-Crate.</p></td>
-            </tr>
-            <tr>
-              <th>
-                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
-              </th>
-              <td>
-                <a href="https://w3id.org/ro/crate/1.0/context#CreativeWork">ro:CreativeWork</a>
-              </td>
-            </tr>
-            <tr>
-              <th>
-                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
-              </th>
-              <td>
-                <a href="#SpaceUrl">da:SpaceUrl</a>
-              </td>
-            </tr>
-          </table>
-        </div>
-        <div class="property entity" id="HasShaclconstrains">
-          <h3>Has Shacl constrains
-            <sup class="sup-op" title="OWL Object Property">op</sup>
-          </h3>
-          <table>
-            <tr>
-              <th>IRI</th>
-              <td>
-                <code>https://open-vocabularies.vliz.be/dmbonassistant#hasShaclFile</code>
-              </td>
-            </tr>
-            <tr>
-              <th>
-                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">Is Defined By</a>
-              </th>
-              <td>
-                <a href="https://open-vocabularies.vliz.be/dmbonassistant">ns1:dmbonassistant</a>
-              </td>
-            </tr>
-            <tr>
-              <th>
-                <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
-              </th>
-              <td><p>Indicates the shacl constrains that are applied to the RO-Crate.</p></td>
-            </tr>
-            <tr>
-              <th>
-                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
-              </th>
-              <td>
-                <a href="https://w3id.org/ro/crate/1.0/context#CreativeWork">ro:CreativeWork</a>
-              </td>
-            </tr>
-            <tr>
-              <th>
-                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
-              </th>
-              <td>
-                <a href="#ShaclFile">da:ShaclFile</a>
-              </td>
-            </tr>
-          </table>
-        </div>
-        <div class="property entity" id="Hasupliftingtemplates">
-          <h3>Has uplifting templates
-            <sup class="sup-op" title="OWL Object Property">op</sup>
-          </h3>
-          <table>
-            <tr>
-              <th>IRI</th>
-              <td>
-                <code>https://open-vocabularies.vliz.be/dmbonassistant#hasSemUpliftFile</code>
-              </td>
-            </tr>
-            <tr>
-              <th>
-                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">Is Defined By</a>
-              </th>
-              <td>
-                <a href="https://open-vocabularies.vliz.be/dmbonassistant">ns1:dmbonassistant</a>
-              </td>
-            </tr>
-            <tr>
-              <th>
-                <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
-              </th>
-              <td><p>Indicates the PySUByT template(s) used to semantically uplift the data within the RO-Crate.</p></td>
-            </tr>
-            <tr>
-              <th>
-                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
-              </th>
-              <td>
-                <a href="https://w3id.org/ro/crate/1.0/context#CreativeWork">ro:CreativeWork</a>
-              </td>
-            </tr>
-            <tr>
-              <th>
-                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
-              </th>
-              <td>
-                <a href="#SemUpliftFile">da:SemUpliftFile</a>
-              </td>
+              <td><p>The size (quantity, volume, mass, etc) of a material replicate</p></td>
             </tr>
           </table>
         </div>
@@ -383,13 +417,21 @@
       <div id="namespaces">
         <h2>Namespaces</h2>
         <dl>
-          <dt id="da">da</dt>
-          <dd>
-            <code>https://open-vocabularies.vliz.be/dmbonassistant#</code>
-          </dd>
-          <dt id="dc">dc</dt>
+          <dt id="dcterms">dcterms</dt>
           <dd>
             <code>http://purl.org/dc/terms/</code>
+          </dd>
+          <dt id="dwc">dwc</dt>
+          <dd>
+            <code>http://rs.tdwg.org/dwc/terms/</code>
+          </dd>
+          <dt id="emobon">emobon</dt>
+          <dd>
+            <code>https://open-vocabularies.vliz.be/EMOBON-event#</code>
+          </dd>
+          <dt id="foaf">foaf</dt>
+          <dd>
+            <code>http://xmlns.com/foaf/0.1/</code>
           </dd>
           <dt id="ns1">ns1</dt>
           <dd>
@@ -407,10 +449,6 @@
           <dd>
             <code>http://www.w3.org/2000/01/rdf-schema#</code>
           </dd>
-          <dt id="ro">ro</dt>
-          <dd>
-            <code>https://w3id.org/ro/crate/1.0/context#</code>
-          </dd>
           <dt id="schema">schema</dt>
           <dd>
             <code>http://schema.org/</code>
@@ -418,6 +456,10 @@
           <dt id="skos">skos</dt>
           <dd>
             <code>http://www.w3.org/2004/02/skos/core#</code>
+          </dd>
+          <dt id="sosa">sosa</dt>
+          <dd>
+            <code>http://www.w3.org/ns/sosa/</code>
           </dd>
           <dt id="vann">vann</dt>
           <dd>
@@ -428,6 +470,12 @@
       <div id="legend">
         <h2>Legend</h2>
         <table class="entity">
+          <tr>
+            <td>
+              <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+            </td>
+            <td>Classes</td>
+          </tr>
           <tr>
             <td>
               <sup class="sup-op" title="OWL Object Property">op</sup>
@@ -457,23 +505,42 @@
         </li>
         <li>
           <h4>
+            <a href="#classes">Classes</a>
+          </h4>
+          <ul class="second">
+            <li>
+              <a href="#Event">Event</a>
+            </li>
+            <li>
+              <a href="#Materialsample">Material sample</a>
+            </li>
+            <li>
+              <a href="#Materialreplicate">Material replicate</a>
+            </li>
+            <li>
+              <a href="#Environmentalmeasurement">Environmental measurement</a>
+            </li>
+            <li>
+              <a href="#WaterSample">Environmental measurement</a>
+            </li>
+            <li>
+              <a href="#SedimentSample">Environmental measurement</a>
+            </li>
+            <li>
+              <a href="#Environmentalmeasurementdevice">Environmental measurement device</a>
+            </li>
+            <li>
+              <a href="#Samplingdevice">Sampling device</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <h4>
             <a href="#objectproperties">Object Properties</a>
           </h4>
           <ul class="second">
             <li>
-              <a href="#HasseedRO-Crate">Has seed RO-Crate</a>
-            </li>
-            <li>
-              <a href="#HasRO-Craterepository">Has RO-Crate repository</a>
-            </li>
-            <li>
-              <a href="#HasSpace">Has Space</a>
-            </li>
-            <li>
-              <a href="#HasShaclconstrains">Has Shacl constrains</a>
-            </li>
-            <li>
-              <a href="#Hasupliftingtemplates">Has uplifting templates</a>
+              <a href="#Samplesize">Sample size</a>
             </li>
           </ul>
         </li>
@@ -483,10 +550,16 @@
           </h4>
           <ul class="second">
             <li>
-              <a href="#da">da</a>
+              <a href="#dcterms">dcterms</a>
             </li>
             <li>
-              <a href="#dc">dc</a>
+              <a href="#dwc">dwc</a>
+            </li>
+            <li>
+              <a href="#emobon">emobon</a>
+            </li>
+            <li>
+              <a href="#foaf">foaf</a>
             </li>
             <li>
               <a href="#ns1">ns1</a>
@@ -501,13 +574,13 @@
               <a href="#rdfs">rdfs</a>
             </li>
             <li>
-              <a href="#ro">ro</a>
-            </li>
-            <li>
               <a href="#schema">schema</a>
             </li>
             <li>
               <a href="#skos">skos</a>
+            </li>
+            <li>
+              <a href="#sosa">sosa</a>
             </li>
             <li>
               <a href="#vann">vann</a>

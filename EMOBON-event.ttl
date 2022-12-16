@@ -1,0 +1,206 @@
+@prefix ro: <https://w3id.org/ro/crate/1.0/context#> .
+@prefix emobon: <https://open-vocabularies.vliz.be/EMOBON-event#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix schema: <http://schema.org/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann:   <http://purl.org/vocab/vann/> .
+@prefix sosa: <http://www.w3.org/ns/sosa/> .
+@prefix dwc: <http://rs.tdwg.org/dwc/terms/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+########
+# Making an ontology for EMO BON, with a focus for now on only what we need for the UGent project
+# To Be Added 
+# - a baseuri for the ontology file, 
+# - and many "name"s  
+
+###############
+# Creatorship #
+###############
+<https://open-vocabularies.vliz.be/EMOBON-event> rdf:type owl:Ontology ;
+	dcterms:creator 
+  [ 
+    schema:name "VLIZ Open Science team"@en ;
+    schema:email        <mailto:opsci@vliz.org> ;
+    schema:affiliation  <https://www.vliz.be/> ;
+    rdf:type foaf:Agent ;
+  ] ;	
+	dc:contributor 
+  [
+    schema:name "Katrina Exter" ;
+    schema:identifier   <https://orcid.org/0000-0002-5911-1536> ;
+    schema:email        <mailto:katrina.exter@vliz.be> ;
+    schema:affiliation  <https://www.vliz.be/> ;
+  ],
+  [
+    schema:name "Marc Portier" ;
+    schema:identifier   <https://orcid.org/0000-0002-9648-6484> ;
+    schema:email        <mailto:marc.portier@vliz.be> ;
+    schema:affiliation  <https://www.vliz.be/> ;
+  ],
+  [
+    schema:name "Cedric Decruw" ;
+    schema:identifier   <https://orcid.org/0000-0001-6387-5988> ;
+    schema:email        <mailto:cedric.decruw@vliz.be> ;
+    schema:affiliation  <https://www.vliz.be/> ;
+  ],
+  [
+    schema:name "Ioulia Santi" ;
+    schema:identifier   <https://orcid.org/0000-0002-0202-8256> ;
+    schema:email        <mailto:ioulia.santi@embrc.eu> ;
+    schema:affiliation  <https://www.embrc.eu/> ;
+  ];
+  dcterms:title "EMO BON Event Ontology"@en ;
+  dcterms:license <https://creativecommons.org/licenses/by/4.0/> ; 	
+  dcterms:description "EMO-BON ontology for describing sampling events, samples, and environmental measurements."@en ;	
+  vann:preferredNamespacePrefix "DMBONassist" ;
+  vann:preferredNamespaceUri    "https://open-vocabularies.vliz.be/EMOBON-event#" ;
+  dcterms:rights "Copyright 2017 W3C/OGC." ;
+  dcterms:created "2017-04-17"^^xsd:date ;
+  dc:modified  "2022-12-07"^^xsd:date .
+
+<https://www.vliz.be/>
+  a schema:Organization ;
+  schema:name   "Vlaams Instituut voor de Zee"@nl ;
+  schema:name   "Flanders Marine Institute"@en ;
+  schema:url    <https://www.vliz.be/> .
+
+<https://www.embrc.eu/>
+  a schema:Organization ;
+  schema:name   "European Marine Biological Resource Centre"@en ;
+  schema:url    <https://www.vliz.be/> .
+
+
+###########
+# Classes #
+###########
+
+emobon:Event
+  rdf:type              owl:Class ;
+  rdfs:isDefinedBy      <https://open-vocabularies.vliz.be/EMOBON-event>;
+  rdfs:definition       "An activity during which material samples are taken and environmental measurements made."@en ;
+  rdfs:label            "Event"@en ;
+  rdfs:subclassof	      dwc:Event .
+
+emobon:MaterialSample    # is the administrative concept   
+  rdf:type              owl:Class ;
+  rdfs:isDefinedBy      <https://open-vocabularies.vliz.be/EMOBON-event>;
+  rdfs:definition       "A (usually small) quantity of a material or product that represents the whole. For EMO BON, these are the material collected during the events."@en ;
+  rdfs:label            "Material sample"@en ;
+  rdfs:subclassof	      sosa:Sample .
+
+emobon:MaterialReplicate   # is the physical thing
+  rdf:type              owl:Class ;
+  rdfs:isDefinedBy      <https://open-vocabularies.vliz.be/EMOBON-event>;
+  rdfs:definition       "A fraction taken of a material sample, which other than quantity/volume, is exactly the same as the material sample."@en ;
+  rdfs:label            "Material replicate"@en ;
+  rdfs:subclassof	      emobon:MaterialSample .
+
+emobon:EnvironmentalMeasurement
+  rdf:type              owl:Class ;
+  rdfs:isDefinedBy      <https://open-vocabularies.vliz.be/EMOBON-event>;
+  rdfs:definition       "Any measurement of an environmental parameter. In the EMO BON context, the set of measurements are defined in an SOP"@en ;
+  rdfs:label            "Environmental measurement"@en ;
+  rdfs:subclassof       sosa:Observation .
+
+emobon:WaterSample
+  rdf:type              owl:Class ;
+  rdfs:isDefinedBy      <https://open-vocabularies.vliz.be/EMOBON-event>;
+  rdfs:definition       "Any material sample that is collected seawater"@en ;
+  rdfs:label            "Environmental measurement"@en ;
+  rdfs:subclassof       sosa:Observation, emobon:MaterialReplicate . 
+
+emobon:SedimentSample
+  rdf:type              owl:Class ;
+  rdfs:isDefinedBy      <https://open-vocabularies.vliz.be/EMOBON-event>;
+  rdfs:definition       "Any material sample that is collected benthic soil"@en ;
+  rdfs:label            "Environmental measurement"@en ;
+  rdfs:subclassof       sosa:Observation, emobon:MaterialReplicate . 
+
+emobon:MeasurementDevice
+  rdf:type              owl:Class ;
+  rdfs:isDefinedBy      <https://open-vocabularies.vliz.be/EMOBON-event>;
+  rdfs:definition       "Any instrument used to make an environmental measurement. In the EMO BON context, the choice of devices to used are defined in an SOP"@en ;
+  rdfs:label            "Environmental measurement device"@en ;
+  rdfs:subclassof       sosa:Sensor .
+
+emobon:SamplingDevice
+  rdf:type              owl:Class ;
+  rdfs:isDefinedBy      <https://open-vocabularies.vliz.be/EMOBON-event>;
+  rdfs:definition       "Any instrument used to take a material sample. In the EMO BON context, the choice of devices to used are defined in an SOP"@en ;
+  rdfs:label            "Sampling device"@en ;
+  rdfs:subclassof       sosa:Sampler .
+
+
+#####################
+# Object Properties #
+#####################
+
+
+
+###################
+# Data Properties #
+###################
+# link to data values (while ObjectProperties link to other "individuals" e.g. that are subjects of a triple?
+
+# aka hasSop
+emobon:sop   
+  rdf:type              owl:DataProperty ;
+  rdfs:isDefinedBy      <https://open-vocabularies.vliz.be/EMOBON-event>;
+  rdfs:comment          "A set of instructions that describe step-by-step the processes that must be taken to properly perform a routine activity."@en ;
+  rdfs:label            "Standard operating procedure"@en ;
+  rdfs:range             sosa:Procedure ;
+  rdfs:domain            emobon:EnvironmentalMeasurement, emobon:MaterialSample .
+
+emobon:measurementType 
+  rdf:type              owl:DataProperty ;
+  rdfs:isDefinedBy      <https://open-vocabularies.vliz.be/EMOBON-event>;
+  rdfs:comment          "A type of measurement"@en ;
+  rdfs:label            "Measurement type"@en ;
+  rdfs:range             skos:Concept ;
+  rdfs:domain            emobon:EnvironmentalMeasurement .
+
+emobon:tidalStage
+  rdf:type              owl:DataProperty ;
+  rdfs:isDefinedBy      <https://open-vocabularies.vliz.be/EMOBON-event>;
+  rdfs:comment          "The stage of the tide during an EMO BON sampling event (low_tide, ebb_tide, flood_tide, high_tide)."@en ;
+  rdfs:label            "Tidal stage"@en ;
+  rdfs:domain           skos:Concept ;
+  rdfs:range            emobon:Event .
+
+emobon:low_tide_stage
+  rdf:type              skos:Concept ;
+  rdfs:isDefinedBy      <https://open-vocabularies.vliz.be/EMOBON-event>;
+  skos:note             "The stage of the tide during an EMO BON sampling event when the water level is at its lowest."@en ;
+  skos:prefLabel        "Low tide"@en .
+
+emobon:ebb_tide_stage
+  rdf:type              skos:Concept ;
+  rdfs:isDefinedBy      <https://open-vocabularies.vliz.be/EMOBON-event>;
+  skos:note             "The stage of the tide during an EMO BON sampling event when the water level is falling."@en ;
+  skos:prefLabel        "Ebb tide"@en .
+
+emobon:flood_tide_stage
+  rdf:type              skos:Concept ;
+  rdfs:isDefinedBy      <https://open-vocabularies.vliz.be/EMOBON-event>;
+  skos:note             "The stage of the tide during an EMO BON sampling event when the water level is rising."@en ;
+  skos:prefLabel        "Flood tide"@en .
+
+emobon:high_tide_stage
+  rdf:type              skos:Concept ;
+  rdfs:isDefinedBy      <https://open-vocabularies.vliz.be/EMOBON-event>;
+  skos:note             "The stage of the tide during an EMO BON sampling event when the water level is at its highest."@en ;
+  skos:prefLabel        "High tide"@en .
+
+emobon:sampleSize
+  rdf:type              owl:ObjectProperty ;
+  rdfs:isDefinedBy      <https://open-vocabularies.vliz.be/EMOBON-event>;
+  rdfs:comment          "The size (quantity, volume, mass, etc) of a material replicate"@en ;
+  rdfs:label            "Sample size"@en ;
+  rdfs:domainIncludes   schema:Thing ;
+  rdfs:rangeIncludes    emobon:MaterialReplicate .
