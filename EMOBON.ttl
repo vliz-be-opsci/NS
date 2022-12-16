@@ -1,5 +1,5 @@
 @prefix ro: <https://w3id.org/ro/crate/1.0/context#> .
-@prefix emobon: <https://open-vocabularies.vliz.be/EMOBON-event#> .
+@prefix emobon: <https://open-vocabularies.vliz.be/EMOBON#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix dc: <http://purl.org/dc/terms/> .
 @prefix schema: <http://schema.org/> .
@@ -22,7 +22,7 @@
 ###############
 # Creatorship #
 ###############
-<https://open-vocabularies.vliz.be/EMOBON-event> rdf:type owl:Ontology ;
+<https://open-vocabularies.vliz.be/EMOBON> rdf:type owl:Ontology ;
 	dcterms:creator 
   [ 
     schema:name "VLIZ Open Science team"@en ;
@@ -58,8 +58,8 @@
   dcterms:title "EMO BON Event Ontology"@en ;
   dcterms:license <https://creativecommons.org/licenses/by/4.0/> ; 	
   dcterms:description "EMO-BON ontology for describing sampling events, samples, and environmental measurements."@en ;	
-  vann:preferredNamespacePrefix "EMOBON_event" ;
-  vann:preferredNamespaceUri    "https://open-vocabularies.vliz.be/EMOBON-event#" ;
+  vann:preferredNamespacePrefix "EMOBON" ;
+  vann:preferredNamespaceUri    "https://open-vocabularies.vliz.be/EMOBON#" ;
   dcterms:rights "Copyright 2017 W3C/OGC." ;
   dcterms:created "2017-04-17"^^xsd:date ;
   dc:modified  "2022-12-07"^^xsd:date .
@@ -82,56 +82,56 @@
 
 emobon:Event
   rdf:type              owl:Class ;
-  rdfs:isDefinedBy      <https://open-vocabularies.vliz.be/EMOBON-event>;
+  rdfs:isDefinedBy      <https://open-vocabularies.vliz.be/EMOBON>;
   rdfs:definition       "An activity during which material samples are taken and environmental measurements made."@en ;
   rdfs:label            "Event"@en ;
   rdfs:subclassof	      dwc:Event .
 
 emobon:MaterialSample    # is the administrative concept   
   rdf:type              owl:Class ;
-  rdfs:isDefinedBy      <https://open-vocabularies.vliz.be/EMOBON-event>;
+  rdfs:isDefinedBy      <https://open-vocabularies.vliz.be/EMOBON>;
   rdfs:definition       "A (usually small) quantity of a material or product that represents the whole. For EMO BON, these are the material collected during the events."@en ;
   rdfs:label            "Material sample"@en ;
   rdfs:subclassof	      sosa:Sample .
 
 emobon:MaterialReplicate   # is the physical thing
   rdf:type              owl:Class ;
-  rdfs:isDefinedBy      <https://open-vocabularies.vliz.be/EMOBON-event>;
+  rdfs:isDefinedBy      <https://open-vocabularies.vliz.be/EMOBON>;
   rdfs:definition       "A fraction taken of a material sample, which other than quantity/volume, is exactly the same as the material sample."@en ;
   rdfs:label            "Material replicate"@en ;
   rdfs:subclassof	      emobon:MaterialSample .
 
 emobon:EnvironmentalMeasurement
   rdf:type              owl:Class ;
-  rdfs:isDefinedBy      <https://open-vocabularies.vliz.be/EMOBON-event>;
+  rdfs:isDefinedBy      <https://open-vocabularies.vliz.be/EMOBON>;
   rdfs:definition       "Any measurement of an environmental parameter. In the EMO BON context, the set of measurements are defined in an SOP"@en ;
   rdfs:label            "Environmental measurement"@en ;
   rdfs:subclassof       sosa:Observation .
 
 emobon:WaterSample
   rdf:type              owl:Class ;
-  rdfs:isDefinedBy      <https://open-vocabularies.vliz.be/EMOBON-event>;
+  rdfs:isDefinedBy      <https://open-vocabularies.vliz.be/EMOBON>;
   rdfs:definition       "Any material sample that is collected seawater"@en ;
   rdfs:label            "Environmental measurement"@en ;
   rdfs:subclassof       sosa:Observation, emobon:MaterialReplicate . 
 
 emobon:SedimentSample
   rdf:type              owl:Class ;
-  rdfs:isDefinedBy      <https://open-vocabularies.vliz.be/EMOBON-event>;
+  rdfs:isDefinedBy      <https://open-vocabularies.vliz.be/EMOBON>;
   rdfs:definition       "Any material sample that is collected benthic soil"@en ;
   rdfs:label            "Environmental measurement"@en ;
   rdfs:subclassof       sosa:Observation, emobon:MaterialReplicate . 
 
 emobon:MeasurementDevice
   rdf:type              owl:Class ;
-  rdfs:isDefinedBy      <https://open-vocabularies.vliz.be/EMOBON-event>;
+  rdfs:isDefinedBy      <https://open-vocabularies.vliz.be/EMOBON>;
   rdfs:definition       "Any instrument used to make an environmental measurement. In the EMO BON context, the choice of devices to used are defined in an SOP"@en ;
   rdfs:label            "Environmental measurement device"@en ;
   rdfs:subclassof       sosa:Sensor .
 
 emobon:SamplingDevice
   rdf:type              owl:Class ;
-  rdfs:isDefinedBy      <https://open-vocabularies.vliz.be/EMOBON-event>;
+  rdfs:isDefinedBy      <https://open-vocabularies.vliz.be/EMOBON>;
   rdfs:definition       "Any instrument used to take a material sample. In the EMO BON context, the choice of devices to used are defined in an SOP"@en ;
   rdfs:label            "Sampling device"@en ;
   rdfs:subclassof       sosa:Sampler .
@@ -151,7 +151,7 @@ emobon:SamplingDevice
 # aka hasSop
 emobon:sop   
   rdf:type              owl:ObjectProperty ;
-  rdfs:isDefinedBy      <https://open-vocabularies.vliz.be/EMOBON-event>;
+  rdfs:isDefinedBy      <https://open-vocabularies.vliz.be/EMOBON>;
   rdfs:comment          "A set of instructions that describe step-by-step the processes that must be taken to properly perform a routine activity."@en ;
   rdfs:label            "Standard operating procedure"@en ;
   rdfs:range             sosa:Procedure ;
@@ -159,7 +159,7 @@ emobon:sop
 
 emobon:measurementType 
   rdf:type              owl:ObjectProperty ;
-  rdfs:isDefinedBy      <https://open-vocabularies.vliz.be/EMOBON-event>;
+  rdfs:isDefinedBy      <https://open-vocabularies.vliz.be/EMOBON>;
   rdfs:comment          "A type of measurement"@en ;
   rdfs:label            "Measurement type"@en ;
   rdfs:range             skos:Concept ;
@@ -167,7 +167,7 @@ emobon:measurementType
 
 emobon:tidalStage
   rdf:type              owl:ObjectProperty ;
-  rdfs:isDefinedBy      <https://open-vocabularies.vliz.be/EMOBON-event>;
+  rdfs:isDefinedBy      <https://open-vocabularies.vliz.be/EMOBON>;
   rdfs:comment          "The stage of the tide during an EMO BON sampling event (low_tide, ebb_tide, flood_tide, high_tide)."@en ;
   rdfs:label            "Tidal stage"@en ;
   rdfs:domain           skos:Concept ;
@@ -175,31 +175,31 @@ emobon:tidalStage
 
 emobon:low_tide_stage
   rdf:type              skos:Concept ;
-  rdfs:isDefinedBy      <https://open-vocabularies.vliz.be/EMOBON-event>;
+  rdfs:isDefinedBy      <https://open-vocabularies.vliz.be/EMOBON>;
   skos:note             "The stage of the tide during an EMO BON sampling event when the water level is at its lowest."@en ;
   skos:prefLabel        "Low tide"@en .
 
 emobon:ebb_tide_stage
   rdf:type              skos:Concept ;
-  rdfs:isDefinedBy      <https://open-vocabularies.vliz.be/EMOBON-event>;
+  rdfs:isDefinedBy      <https://open-vocabularies.vliz.be/EMOBON>;
   skos:note             "The stage of the tide during an EMO BON sampling event when the water level is falling."@en ;
   skos:prefLabel        "Ebb tide"@en .
 
 emobon:flood_tide_stage
   rdf:type              skos:Concept ;
-  rdfs:isDefinedBy      <https://open-vocabularies.vliz.be/EMOBON-event>;
+  rdfs:isDefinedBy      <https://open-vocabularies.vliz.be/EMOBON>;
   skos:note             "The stage of the tide during an EMO BON sampling event when the water level is rising."@en ;
   skos:prefLabel        "Flood tide"@en .
 
 emobon:high_tide_stage
   rdf:type              skos:Concept ;
-  rdfs:isDefinedBy      <https://open-vocabularies.vliz.be/EMOBON-event>;
+  rdfs:isDefinedBy      <https://open-vocabularies.vliz.be/EMOBON>;
   skos:note             "The stage of the tide during an EMO BON sampling event when the water level is at its highest."@en ;
   skos:prefLabel        "High tide"@en .
 
 emobon:sampleSize
   rdf:type              owl:ObjectProperty ;
-  rdfs:isDefinedBy      <https://open-vocabularies.vliz.be/EMOBON-event>;
+  rdfs:isDefinedBy      <https://open-vocabularies.vliz.be/EMOBON>;
   rdfs:comment          "The size (quantity, volume, mass, etc) of a material replicate"@en ;
   rdfs:label            "Sample size"@en ;
   rdfs:domainIncludes   schema:Thing ;
