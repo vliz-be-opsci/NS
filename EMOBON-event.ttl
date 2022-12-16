@@ -1,5 +1,5 @@
 @prefix ro: <https://w3id.org/ro/crate/1.0/context#> .
-@prefix gov: <{{baseuri}}/{{name}}#> .
+@prefix emobon: <{{baseuri}}/{{name}}#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix dc: <http://purl.org/dc/terms/> .
 @prefix schema: <http://schema.org/> .
