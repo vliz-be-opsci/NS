@@ -58,7 +58,7 @@
   dcterms:title "EMO BON Event Ontology"@en ;
   dcterms:license <https://creativecommons.org/licenses/by/4.0/> ; 	
   dcterms:description "EMO-BON ontology for describing sampling events, samples, and environmental measurements."@en ;	
-  vann:preferredNamespacePrefix "EMOBON" ;
+  vann:preferredNamespacePrefix "EMOBON-event" ;
   vann:preferredNamespaceUri    "https://open-vocabularies.vliz.be/EMOBON#" ;
   dcterms:rights "Copyright 2017 W3C/OGC." ;
   dcterms:created "2017-04-17"^^xsd:date ;
