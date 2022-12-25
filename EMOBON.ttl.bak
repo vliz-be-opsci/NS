@@ -112,14 +112,14 @@ emobon:WaterSample
   rdf:type              owl:Class ;
   rdfs:isDefinedBy      <{{baseuri}}/{{name}}>;
   rdfs:definition       "Any material sample that is collected seawater"@en ;
-  rdfs:label            "Environmental measurement"@en ;
+  rdfs:label            "Water Sample"@en ;
   rdfs:subclassof       sosa:Observation, emobon:MaterialReplicate . 
 
 emobon:SedimentSample
   rdf:type              owl:Class ;
   rdfs:isDefinedBy      <{{baseuri}}/{{name}}>;
   rdfs:definition       "Any material sample that is collected benthic soil"@en ;
-  rdfs:label            "Environmental measurement"@en ;
+  rdfs:label            "Sediment Sample"@en ;
   rdfs:subclassof       sosa:Observation, emobon:MaterialReplicate . 
 
 emobon:MeasurementDevice
