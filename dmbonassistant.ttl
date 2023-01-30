@@ -98,6 +98,22 @@ da:SemUpliftFile
 
 ### predicates ###
 
+da:crateRepo
+  a 			owl:ObjectProperty ; 
+  rdfs:isDefinedBy      <{{baseuri}}/{{name}}>;
+  rdfs:comment          "Indicates a RO-Crate repo."@en ;
+  rdfs:label            "RO-Crate repo"@en ;
+  rdfs:domain           ro:CreativeWork ;
+  rdfs:range            da:SeedCrate .
+
+da:semBenchConfig
+  a 			owl:ObjectProperty ; 
+  rdfs:isDefinedBy      <{{baseuri}}/{{name}}>;
+  rdfs:comment          "A configuration file for semantic workbench actions"@en ;
+  rdfs:label            "sembench config file"@en ;
+  rdfs:domain           ro:CreativeWork ;
+  rdfs:range            da:SeedCrate .
+
 da:hasSeedCrate
   a                     owl:ObjectProperty ;
   rdfs:isDefinedBy      <{{baseuri}}/{{name}}>;
