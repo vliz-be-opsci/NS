@@ -15,18 +15,18 @@
     ],
     "https://schema.org/contributor": [
       {
-        "@id": "_:ne35c120ce2e04a84ab99f4b57695ef08b2"
+        "@id": "_:n96478f78632c4730a92ddb98f224da62b2"
       },
       {
-        "@id": "_:ne35c120ce2e04a84ab99f4b57695ef08b3"
+        "@id": "_:n96478f78632c4730a92ddb98f224da62b3"
       },
       {
-        "@id": "_:ne35c120ce2e04a84ab99f4b57695ef08b4"
+        "@id": "_:n96478f78632c4730a92ddb98f224da62b4"
       }
     ],
     "https://schema.org/creator": [
       {
-        "@id": "_:ne35c120ce2e04a84ab99f4b57695ef08b1"
+        "@id": "_:n96478f78632c4730a92ddb98f224da62b1"
       }
     ],
     "https://schema.org/dateIssued": [
@@ -60,16 +60,16 @@
     ]
   },
   {
-    "@id": "_:ne35c120ce2e04a84ab99f4b57695ef08b1"
+    "@id": "_:n96478f78632c4730a92ddb98f224da62b1"
   },
   {
-    "@id": "_:ne35c120ce2e04a84ab99f4b57695ef08b2"
+    "@id": "_:n96478f78632c4730a92ddb98f224da62b2"
   },
   {
-    "@id": "_:ne35c120ce2e04a84ab99f4b57695ef08b3"
+    "@id": "_:n96478f78632c4730a92ddb98f224da62b3"
   },
   {
-    "@id": "_:ne35c120ce2e04a84ab99f4b57695ef08b4"
+    "@id": "_:n96478f78632c4730a92ddb98f224da62b4"
   }
 ]
 	</script>
@@ -164,6 +164,92 @@
       </div>
       <div class="section" id="objectproperties">
         <h2>Object Properties</h2>
+        <div class="property entity" id="RO-Craterepo">
+          <h3>RO-Crate repo
+            <sup class="sup-op" title="OWL Object Property">op</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>https://open-vocabularies.vliz.be/dmbonassistant#crateRepo</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">Is Defined By</a>
+              </th>
+              <td>
+                <a href="https://open-vocabularies.vliz.be/dmbonassistant">ns1:dmbonassistant</a>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+              </th>
+              <td><p>Indicates a RO-Crate repo.</p></td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
+              </th>
+              <td>
+                <a href="https://w3id.org/ro/crate/1.0/context#CreativeWork">ro:CreativeWork</a>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
+              </th>
+              <td>
+                <a href="#SeedCrate">da:SeedCrate</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="sembenchconfigfile">
+          <h3>sembench config file
+            <sup class="sup-op" title="OWL Object Property">op</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>https://open-vocabularies.vliz.be/dmbonassistant#semBenchConfig</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">Is Defined By</a>
+              </th>
+              <td>
+                <a href="https://open-vocabularies.vliz.be/dmbonassistant">ns1:dmbonassistant</a>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+              </th>
+              <td><p>A configuration file for semantic workbench actions</p></td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
+              </th>
+              <td>
+                <a href="https://w3id.org/ro/crate/1.0/context#CreativeWork">ro:CreativeWork</a>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
+              </th>
+              <td>
+                <a href="#SeedCrate">da:SeedCrate</a>
+              </td>
+            </tr>
+          </table>
+        </div>
         <div class="property entity" id="HasseedRO-Crate">
           <h3>Has seed RO-Crate
             <sup class="sup-op" title="OWL Object Property">op</sup>
@@ -460,6 +546,12 @@
             <a href="#objectproperties">Object Properties</a>
           </h4>
           <ul class="second">
+            <li>
+              <a href="#RO-Craterepo">RO-Crate repo</a>
+            </li>
+            <li>
+              <a href="#sembenchconfigfile">sembench config file</a>
+            </li>
             <li>
               <a href="#HasseedRO-Crate">Has seed RO-Crate</a>
             </li>
