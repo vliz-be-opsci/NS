@@ -175,7 +175,7 @@ emobon:tidalStage
 
 emobon:tidalStageScheme 
   rdf:type              skos:ConceptScheme;
-  skos:prefLabel        "List of different tidal stages"@en
+  skos:prefLabel        "List of different tidal stages"@en .
 
 emobon:low_tide_stage
   rdf:type              skos:Concept ;
