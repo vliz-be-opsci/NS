@@ -16,7 +16,7 @@ jobs:
           fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
 
       - name: Build Pages
-        uses: vliz-be-opsci/pylode-to-pages@v0.1.X
+        uses: vliz-be-opsci/pylode-to-pages@v0.1.x
         with:
           baseuri: https://open-vocabularies.vliz.be
           outfolder: ./publish
