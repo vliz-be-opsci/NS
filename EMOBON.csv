@@ -1,0 +1,5 @@
+ID,DATE,PREFLABEL_EN,DEFINITION_EN,ALTLABEL_EN,BROADER,NARROWER
+low_tide,14-02-2023,Low Tide,The stage of the tide during an EMO BON sampling event when the water level is at its lowest.,,,
+ebb_tide,14-02-2023,Ebb Tide,The stage of the tide during an EMO BON sampling event when the water level is falling.,,,
+flood_tide,14-02-2023,Flood Tide,The stage of the tide during an EMO BON sampling event when the water level is rising.,,,
+high_tide,14-02-2023,High Tide,The stage of the tide during an EMO BON sampling event when the water level is at its highest.,,,
