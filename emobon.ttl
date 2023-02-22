@@ -165,46 +165,6 @@ emobon:measurementType
   rdfs:range             skos:Concept ;
   rdfs:domain            emobon:EnvironmentalMeasurement .
 
-emobon:tidalStage
-  rdf:type              owl:DatatypeProperty ;
-  rdfs:isDefinedBy      <https://open-vocabularies.vliz.be/emobon>;
-  rdfs:comment          "The stage of the tide during an EMO BON sampling event (low_tide, ebb_tide, flood_tide, high_tide)."@en ;
-  rdfs:label            "Tidal stage"@en ;
-  rdfs:domain           skos:Concept ;
-  rdfs:range            emobon:Event .
-
-emobon:tidalStageCollection
-  rdf:type              skos:Collection;
-  skos:prefLabel        "List of different tidal stages"@en .
-
-emobon:low_tide_stage
-  rdf:type              skos:Concept ;
-  rdfs:isDefinedBy      <https://open-vocabularies.vliz.be/emobon>;
-  skos:note             "The stage of the tide during an EMO BON sampling event when the water level is at its lowest."@en ;
-  skos:member         emobon:tidalStageCollection ;
-  skos:prefLabel        "Low tide"@en .
-
-emobon:ebb_tide_stage
-  rdf:type              skos:Concept ;
-  rdfs:isDefinedBy      <https://open-vocabularies.vliz.be/emobon>;
-  skos:note             "The stage of the tide during an EMO BON sampling event when the water level is falling."@en ;
-  skos:member         emobon:tidalStageCollection ;
-  skos:prefLabel        "Ebb tide"@en .
-
-emobon:flood_tide_stage
-  rdf:type              skos:Concept ;
-  rdfs:isDefinedBy      <https://open-vocabularies.vliz.be/emobon>;
-  skos:note             "The stage of the tide during an EMO BON sampling event when the water level is rising."@en ;
-  skos:member         emobon:tidalStageCollection ;
-  skos:prefLabel        "Flood tide"@en .
-
-emobon:high_tide_stage
-  rdf:type              skos:Concept ;
-  rdfs:isDefinedBy      <https://open-vocabularies.vliz.be/emobon>;
-  skos:note             "The stage of the tide during an EMO BON sampling event when the water level is at its highest."@en ;
-  skos:member         emobon:tidalStageCollection ;
-  skos:prefLabel        "High tide"@en .
-
 emobon:sampleSize
   rdf:type              owl:DatatypeProperty ;
   rdfs:isDefinedBy      <https://open-vocabularies.vliz.be/emobon>;
