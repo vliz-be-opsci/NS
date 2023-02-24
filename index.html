@@ -244,9 +244,8 @@
 }
 
 .right-align {
-    margin-left: 98%;
     margin-right: 10px;
-    vertical-align: top;
+    float: right;
 }
 
 #toc ul {
@@ -276,6 +275,29 @@
     list-style-type: none;
 }
 
+.myButton {
+	box-shadow: 0px 10px 14px -7px #276873;
+	background:linear-gradient(to bottom, #599bb3 5%, navy 100%);
+	background-color:navy;
+	border-radius:8px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:12px;
+	font-weight:bold;
+	padding:4px 10px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #3d768a;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #408c99 5%, #599bb3 100%);
+	background-color:#408c99;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
 code{
     word-wrap: break-word;
   }
@@ -303,7 +325,7 @@ code{
                 
                 <h3 class="title">
                     emobon-governance/
-                    <sup class="sup-op" title="ontology"><a href="emobon-governance"> Ontology</a></sup>
+                    <a href="emobon-governance" class="myButton"> Ontology</a>
                     
                     
                     
@@ -315,7 +337,7 @@ code{
                     
                     
                     
-                    <sup class="right-align sup-op" title="turtle file"><a href="emobon-governance.ttl">.ttl</a></sup>
+                    <a href="emobon-governance.ttl" class="myButton right-align">.ttl</a>
                 </h3>
                 <table>
                     <tr>
@@ -347,7 +369,7 @@ code{
                 
                 <h3 class="title">
                     dmbonassistant/
-                    <sup class="sup-op" title="ontology"><a href="dmbonassistant"> Ontology</a></sup>
+                    <a href="dmbonassistant" class="myButton"> Ontology</a>
                     
                     
                     
@@ -359,7 +381,7 @@ code{
                     
                     
                     
-                    <sup class="right-align sup-op" title="turtle file"><a href="dmbonassistant.ttl">.ttl</a></sup>
+                    <a href="dmbonassistant.ttl" class="myButton right-align">.ttl</a>
                 </h3>
                 <table>
                     <tr>
@@ -391,7 +413,7 @@ code{
                 
                 <h3 class="title">
                     emobon/
-                    <sup class="sup-op" title="ontology"><a href="emobon"> Ontology</a></sup>
+                    <a href="emobon" class="myButton"> Ontology</a>
                     
                     
                     
@@ -400,12 +422,12 @@ code{
                     
                     
                     
-                    <sup class="sup-op" title="vocabulary">--- <a href="emobon_vocab"><span class="red">DRAFT</span> Vocabulary</a></sup>
+                    <a href="emobon_vocab" class="myButton" ><span class="red">DRAFT</span> Vocabulary</a>
                     
                     
                     
                     
-                    <sup class="right-align sup-op" title="turtle file"><a href="emobon.ttl">.ttl</a></sup>
+                    <a href="emobon.ttl" class="myButton right-align">.ttl</a>
                 </h3>
                 <table>
                     <tr>
