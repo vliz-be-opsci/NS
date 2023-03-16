@@ -69,7 +69,6 @@ da:CrateRepo
   rdfs:isDefinedBy      <https://open-vocabularies.vliz.be/dmbonassistant>;
   rdfs:comment          "The access-string to the (public) file repository holding the version managed source data files of the RO-Crate datapackage."@en ;
   rdfs:label            "RO-Crate repository"@en ;
-
   rdfs:subclassof	      ro:RepositoryObject .
 # to check with Cedric if this is correct... --> atm points to collection class, while the expected value should be a url??
 # in fact - a git-connect-string is technically not a URL - since it does not start with http(s)://
@@ -106,7 +105,7 @@ da:crateRepo
   rdfs:domain           ro:CreativeWork ;
   rdfs:range            da:SeedCrate .
 
-da:semBenchConfig
+da:semBenchConfigPath
   a 			owl:ObjectProperty ; 
   rdfs:isDefinedBy      <https://open-vocabularies.vliz.be/dmbonassistant>;
   rdfs:comment          "A configuration file for semantic workbench actions"@en ;
