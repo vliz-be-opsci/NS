@@ -1,13 +1,13 @@
         #pylode {
             position: fixed;
-            top: 130px;
-            left: -80px;
+            top: 205px;
+            left: -150px;
             font-size: small;
             transform: rotate(-90deg);
             color: grey;
         }
         #pylode a {
-            font-size: 2em;
+            font-size: 1.5em;
             font-weight: bold;
             text-decoration: none;
             color: #005A9C;
@@ -23,6 +23,12 @@
         }
         #pylode #version {
             font-size: 1.0em;
+        }
+
+        #profile {
+            font-style: italic;
+            font-size: 1.25em;
+            color: darkred!important;
         }
 
         .cardinality {
@@ -131,7 +137,7 @@
             background-position: top left;
             background-attachment: fixed;
             background-repeat: no-repeat;
-            text-align: justify;
+            text-align: left;
         }
 
         section {
@@ -255,10 +261,13 @@
 code{
     word-wrap: break-word;
   }
-  table {
+table {
     table-layout: fixed;
     width: 100%;
-  }
-  td {
+}
+td {
     word-wrap: break-word;
-  }
+}
+#legend table.entity {
+    width: 25%;
+}

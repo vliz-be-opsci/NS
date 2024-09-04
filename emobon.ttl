@@ -172,33 +172,6 @@ emobon:sampleSize
   rdfs:label            "Sample size"@en ;
   rdfs:domainIncludes   schema:Thing ;
   rdfs:rangeIncludes    emobon:MaterialReplicate .
-<https://open-vocabularies.vliz.be/emobon#low_tide>
-        rdf:type               skos:Concept ;
-        dc:date                "14-02-2023" ;
-        dc:identifier          "low_tide" ;
-        skos:prefLabel         "Low Tide"@en ;
-        skos:definition        "The stage of the tide during an EMO BON sampling event when the water level is at its lowest."@en ;
-        
-        .
-
-<https://open-vocabularies.vliz.be/emobon#ebb_tide>
-        rdf:type               skos:Concept ;
-        dc:date                "14-02-2023" ;
-        dc:identifier          "ebb_tide" ;
-        skos:prefLabel         "Ebb Tide"@en ;
-        skos:definition        "The stage of the tide during an EMO BON sampling event when the water level is falling."@en ;
-        
-        .
-
-<https://open-vocabularies.vliz.be/emobon#flood_tide>
-        rdf:type               skos:Concept ;
-        dc:date                "14-02-2023" ;
-        dc:identifier          "flood_tide" ;
-        skos:prefLabel         "Flood Tide"@en ;
-        skos:definition        "The stage of the tide during an EMO BON sampling event when the water level is rising."@en ;
-        
-        .
-
 <https://open-vocabularies.vliz.be/emobon#high_tide>
         rdf:type               skos:Concept ;
         dc:date                "14-02-2023" ;
